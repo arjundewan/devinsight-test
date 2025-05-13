@@ -1,0 +1,23 @@
+{
+	"projectName": "SampleAnalysisProject",
+	"version": "1.0.0",
+	"description": "Configuration for the sample analysis project.",
+	"defaultDataSource": "dummy",
+	"logging": {
+		"level": "INFO",
+		"fileOutput": false,
+		"logFilePath": null
+	},
+	"featureFlags": {
+		"enableAdvancedCalculations": true,
+		"useCaching": false
+	},
+	"apiEndpoints": {
+		"dataService": "http://localhost:8080/data",
+		"userService": "http://localhost:8081/users"
+	},
+	"retryPolicy": {
+		"maxRetries": 3,
+		"backoffFactor": 0.5
+	}
+}
